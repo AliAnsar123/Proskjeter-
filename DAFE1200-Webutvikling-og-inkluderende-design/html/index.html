@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Alexia</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<nav class="mainNav">
+    <a href="index.html" id="logo">ALEXIA</a>
+    <div class = "mainMenu">
+        <a href="problem.html">Problem</a>
+        <a href="solution.html">Solution</a>
+        <a href="contact.html">Contact</a>
+        <a href="sources.html">Sources</a>
+    </div>
+</nav>
+
+    <header class="indexHead">
+        <section>
+            <div class="left">
+                <h1>Dyslexia? Reading made easy</h1>
+                <p>When text is created without the intent of dyslexics reading it, there becomes a problem. Thats why we created Alexia, the application that helps you with your dyslexia.</p>
+            </div>
+            <div class="right">
+                <img src="../img/alexia.gif" title="Alexia the app" alt="gif of how the app works">
+            </div>
+        </section>
+    </header>
+
+    <div class="section1">
+        <h1>When life gives you dyslexia, Alexia is here to save the day</h1>
+        <p>With just one click you can turn unclear texts to readable ones</p>
+    </div>
+
+    <div class="section2">
+        <div class="content">
+            <div class="left">
+                <h1>Problem</h1>
+                <p>Learning about the importance of accessibility in our lectures, made us think about what other people might experience. <br>
+                We started thinking alot about the reading disability called dyslexia. This condition makes it harder for dyslexics to read. It could vary between blurriness, recognition of letters and numbers, difficulty of pronouncing words and a lot more.</p>
+                <a href="problem.html" class="button">Learn More</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="right">
+                <img src="../img/hardToRead.jpg" title="small text hard to read" alt="photo of a girl struggling to read because of bad fonts in the newspaper" >
+                <p class="credit">FOTO: Alexandra Sørlie</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section3">
+        <div class="left">
+            <a id="arrowLeft" class="hidden" onclick="back()" onkeypress="back()" tabindex="0" style="color: #d3d3d3; cursor: default;">
+                &#10094;
+            </a>
+            <img src="../img/loadingscreen.png" title="Alexia App" alt="This shows pictures of different parts of the app">
+            <a  id="arrowRight" class="hidden" onclick="forward()" onkeypress="forward()" tabindex="0">
+                &#10095;
+            </a>
+        </div>
+        <div class="spacer"></div>
+        <div class="right">
+            <h1>Solution</h1>
+            <p>Our Solution is to make an app that can scan or take pictures of signs, texts, menus or anything that has text on it.
+            It's as easy as opening the app and hovering your phone over the text you want to read. If you take a picture of the text, it transfers it to a textbox, rather than the original background of the text. Here you'll also have the choice to change the font.</p>
+            <a href="solution.html" class="button">Learn More</a>
+        </div>
+    </div>
+
+    <footer>
+    <div class="about">
+        <h2>Our idea</h2>
+        <p>The app Alexia can help dyslexic people to better read and understand texts they come across in their daily lives.
+            This doesnt 'heal' dyslexia, but we hope it can make dyslexics lives better</p>
+    </div>
+    <div class="social">
+        <h2>Follow us:</h2>
+        <div class="ikons">
+            <a href="https://twitter.com/Alexia48418984" target="_blank"> <img class="logo" src="../img/twitter.png" title="Twitter Icon" alt="This is a Twitter icon,if you click it you will visit our Twitter page"> </a>
+
+            <a href="https://www.facebook.com/Alexia-App-109022800573672/?modal=admin_todo_tour" target="_blank"> <img class="logo" src="../img/facebook.png" title="Facebook Icon" alt="This is a Facebook icon,if you click it you will visit our Facebook page"> </a>
+        </div>
+    </div>
+        <div class="info">
+            <div class="adresse">
+                <h2>Address</h2>
+                <p>Pilestredet 35, 0166 Oslo</p><br>
+            </div>
+            <div class="telefon">
+                <h2>Phone</h2>
+                <p>(+47) 40739212</p><br>
+            </div>
+            <div class="infoRigt">
+                <h2>Email</h2>
+                <p>Mail@Alexia.com</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let venstrePil = document.querySelectorAll(".section3 .left a")[0];
+        let hoyrePil = document.querySelectorAll(".section3 .left a")[1];
+        let bilde = document.querySelectorAll(".section3 .left img")[0];
+
+        document.getElementById("arrowRight").classList.remove("hidden");
+        document.getElementById("arrowLeft").classList.remove("hidden");
+
+        let bilder = [
+            "../img/loadingscreen.png",
+            "../img/hoverFunction.png",
+            "../img/2ndFunction.png"  //skal sette inn annet bilde, dette er bare midlertidig
+
+        ];
+
+        let index = 0;
+
+        function back() {
+            if (index !== 0) {
+                index--;
+                byttBilde(index);
+            }
+        }
+        
+        function forward() {
+            // .length - 1 fordi length er 1 større enn siste index i arrayet, index starter på 0, length starter på 1...
+            if (index !== bilder.length-1) {
+                index++;
+                byttBilde(index);
+            }
+        }
+
+        function byttBilde(index) {
+            if (index === bilder.length-1) {
+                hoyrePil.style.color = "#d3d3d3";
+                hoyrePil.style.cursor = "default";
+            } else {
+                hoyrePil.style.color = "#000000";
+                hoyrePil.style.cursor = "pointer";
+            }
+            if (index === 0) {
+                venstrePil.style.color = "#d3d3d3"
+                venstrePil.style.cursor = "default";
+            } else {
+                venstrePil.style.color = "#000000";
+                venstrePil.style.cursor = "pointer";
+            }
+
+            bilde.style.opacity = "0";
+
+            setTimeout(function() {
+                bilde.src = bilder[index];
+                bilde.onload = function() {
+                    bilde.style.opacity = "1";
+                }
+            }, 500);
+        }
+    </script>
+</body>
+</html>
