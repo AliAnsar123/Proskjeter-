@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.11
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gruppeoppgave-1", "Gruppeoppgave-1.csproj", "{EFFCB59F-689D-45FE-A75E-91F16F442D1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F4AACD7-CB56-4140-BDA1-DD9B77780B9E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitTestProject", "..\xUnitTestProject\xUnitTestProject.csproj", "{35981F7F-3BAA-4D45-BFF3-F1C4E8300D34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFFCB59F-689D-45FE-A75E-91F16F442D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFFCB59F-689D-45FE-A75E-91F16F442D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFFCB59F-689D-45FE-A75E-91F16F442D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFFCB59F-689D-45FE-A75E-91F16F442D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35981F7F-3BAA-4D45-BFF3-F1C4E8300D34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35981F7F-3BAA-4D45-BFF3-F1C4E8300D34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35981F7F-3BAA-4D45-BFF3-F1C4E8300D34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35981F7F-3BAA-4D45-BFF3-F1C4E8300D34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46E4157B-0C33-4231-A7F8-8F34AB862EA3}
+	EndGlobalSection
+EndGlobal

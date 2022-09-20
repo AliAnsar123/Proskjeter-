@@ -1,0 +1,163 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Gruppeoppgave_1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Models\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+    <None Remove="Microsoft.EntityFrameworkCore.Proxies" />
+    <None Remove="Serilog.Extensions.Logging.File" />
+    <None Remove="DAL\" />
+    <None Remove="Logs\" />
+    <None Remove="SQLiteNetExtensions.Async" />
+    <None Remove="sqlite-net-pcl" />
+    <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
+    <None Remove="DAL\Interfaces\" />
+    <None Remove="DAL\Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Logs\" />
+    <Folder Include="DAL\Interfaces\" />
+    <Folder Include="DAL\Database\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="DatabaseDiagram.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="27.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.11" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\js\chunk-vendors.bd4c0980.js" />
+    <Content Remove="wwwroot\js\chunk-vendors.bd4c0980.js.map" />
+    <Content Remove="wwwroot\css\chunk-vendors.7e960c66.css" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\css\chunk-vendors.7e960c66.css" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\js\app.c7842c32.js" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js" />
+    <Content Remove="wwwroot\css\chunk-vendors.7e960c66.css" />
+    <Content Remove="wwwroot\js\about.576f670d.js.map" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js.map" />
+    <Content Remove="wwwroot\js\app.c7842c32.js.map" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\css\about.a8271dab.css" />
+    <Content Remove="wwwroot\js\about.576f670d.js" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\js\about.576f670d.js" />
+    <Content Remove="wwwroot\css\about.a8271dab.css" />
+    <Content Remove="wwwroot\js\app.c7842c32.js" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js" />
+    <Content Remove="wwwroot\js\about.576f670d.js.map" />
+    <Content Remove="wwwroot\js\app.c7842c32.js.map" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js.map" />
+    <Content Remove="wwwroot\css\chunk-vendors.7e960c66.css" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\css\about.a8271dab.css" />
+    <Content Remove="wwwroot\js\about.576f670d.js" />
+    <Content Remove="wwwroot\css\chunk-vendors.7e960c66.css" />
+    <Content Remove="wwwroot\js\app.c7842c32.js" />
+    <Content Remove="wwwroot\js\about.576f670d.js.map" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js" />
+    <Content Remove="wwwroot\js\app.c7842c32.js.map" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js.map" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\css\about.a8271dab.css" />
+    <Content Remove="wwwroot\js\about.576f670d.js" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js" />
+    <Content Remove="wwwroot\js\app.c7842c32.js" />
+    <Content Remove="wwwroot\js\about.576f670d.js.map" />
+    <Content Remove="wwwroot\js\app.c7842c32.js.map" />
+    <Content Remove="wwwroot\css\chunk-vendors.7e960c66.css" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js.map" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js" />
+    <Content Remove="wwwroot\js\about.576f670d.js.map" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js.map" />
+    <Content Remove="wwwroot\js\app.c7842c32.js.map" />
+    <Content Remove="wwwroot\css\chunk-vendors.7e960c66.css" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\js\about.576f670d.js" />
+    <Content Remove="wwwroot\css\about.a8271dab.css" />
+    <Content Remove="wwwroot\js\app.c7842c32.js" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\css\about.a8271dab.css" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\js\about.576f670d.js" />
+    <Content Remove="wwwroot\css\chunk-vendors.7e960c66.css" />
+    <Content Remove="wwwroot\js\app.c7842c32.js" />
+    <Content Remove="wwwroot\js\app.c7842c32.js.map" />
+    <Content Remove="wwwroot\js\about.576f670d.js.map" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js.map" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\js\about.576f670d.js" />
+    <Content Remove="wwwroot\css\about.a8271dab.css" />
+    <Content Remove="wwwroot\js\app.c7842c32.js" />
+    <Content Remove="wwwroot\css\chunk-vendors.7e960c66.css" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js.map" />
+    <Content Remove="wwwroot\js\app.c7842c32.js.map" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js" />
+    <Content Remove="wwwroot\js\about.576f670d.js.map" />
+    <Content Remove="wwwroot\css\about.a8271dab.css" />
+    <Content Remove="wwwroot\js\app.c7842c32.js" />
+    <Content Remove="wwwroot\css\chunk-vendors.7e960c66.css" />
+    <Content Remove="wwwroot\js\about.576f670d.js.map" />
+    <Content Remove="wwwroot\js\app.c7842c32.js.map" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js.map" />
+    <Content Remove="wwwroot\js\chunk-vendors.cd02d93b.js" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\js\about.576f670d.js" />
+    <Content Remove="wwwroot\css\chunk-3e33095a.67646f75.css" />
+    <Content Remove="wwwroot\js\chunk-3e33095a.768a1998.js" />
+    <Content Remove="wwwroot\css\chunk-fdf3a17e.fbe7796b.css" />
+    <Content Remove="wwwroot\js\chunk-3e33095a.768a1998.js.map" />
+    <Content Remove="wwwroot\js\chunk-fdf3a17e.740f134c.js" />
+    <Content Remove="wwwroot\js\chunk-fdf3a17e.740f134c.js.map" />
+    <Content Remove="wwwroot\js\about.51988f0c.js" />
+    <Content Remove="wwwroot\js\chunk-2d2086b7.9e440163.js" />
+    <Content Remove="wwwroot\css\about.daba33ab.css" />
+    <Content Remove="wwwroot\js\app.8ef5ebdf.js" />
+    <Content Remove="wwwroot\js\about.51988f0c.js.map" />
+    <Content Remove="wwwroot\js\app.8ef5ebdf.js.map" />
+    <Content Remove="wwwroot\js\chunk-2d2086b7.9e440163.js.map" />
+  </ItemGroup>
+</Project>
