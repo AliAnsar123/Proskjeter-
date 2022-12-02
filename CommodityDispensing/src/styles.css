@@ -1,0 +1,108 @@
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.tab-list-item:hover {
+  background-color: #2c6693;
+  color: white;
+  cursor: pointer;
+}
+
+.tab-list-active {
+  background-color: #2c6693;
+  border: solid #ccc;
+  color: white;
+  border-width: 1px 1px 0 1px;
+}
+
+label .tab-list {
+  border-bottom: px solid white;
+  padding-left: 0;
+}
+
+.tab-list {
+  border-bottom: 1px solid #2c6693;
+  padding-left: 0;
+}
+
+.tab-list li {
+  user-select: none;
+}
+
+.restocking .dispensing {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+.search input {
+  width: 400px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterCategory {
+  display: flex;
+  flex-direction: row;
+}
+
+.datatable {
+  margin-top: 10px;
+}
+
+.tabs {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.update-button {
+  margin-left: 60%;
+}
+
+.restocking input {
+  width: 200px;
+  max-height: 40px;
+  padding: 0.25rem;
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 3px;
+}
+
+.commodityFormButtons {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.dispensing {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.deleteAllButton {
+  margin-top: 10px;
+}
+
+.external {
+  margin-bottom: 10px;
+}
+
+.alertbar {
+  margin-bottom: 80%;
+}
